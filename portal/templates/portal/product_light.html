@@ -1,0 +1,125 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+
+{% block content %}
+	<div class = "d-flex justify-content-center" style = "background-color:#1A1A1A;">
+		<div class = "py-3">
+			<div class = "my-5 text-center text-white">
+				<h1 style = "font-size:3.5rem;">出色的终端如今更出色</h1>
+			</div>
+			<div class = "">
+				<img src = "{% static 'portal/img/WJ3006.jpg' %}" class = "img-fluid"></img>
+			</div>
+		</div>
+	</div>
+
+	<div class = "d-md-flex justify-content-md-center text-white bg-dark" style = "">
+		<div class = "py-3">
+		<div class = "my-5 text-center mx-3">
+			<h1 style = "font-size:3.5rem;">更多扩展</h1>
+		</div>
+		<div class = "mx-auto lamp_head_show">
+			<figure class = "figure">
+			<img src = "{% static 'portal/img/zongxian.jpg'%}" class = "figure-img img-fluid"></img>
+			<figcaption class = "figure-caption my-3 text-center px-4 text-white mx-auto" style = "font-size:22px;max-width:960px;">终端增加系统总线，大大简化了工程安装过程。这样通过系统总线既可以扩展各种硬件功能，有可以将现有的路灯监控、集中器、防盗上端等产品整合到一起。</figcaption>
+			</figure>
+		</div>
+		</div>
+	</div>
+
+	<div class = "d-md-flex justify-content-md-center  bg-light" style = "">
+		<div class = "py-3">
+		<div class = "my-5 text-center mx-3">
+			<h1 style = "font-size:3.5rem;">更强力</h1>
+		</div>
+		<div class = "mx-auto lamp_head_show">
+			<figure class = "figure">
+			<img src = "{% static 'portal/img/cpu.jpg'%}" class = "figure-img img-fluid"></img>
+			<figcaption class = "figure-caption my-3 text-center px-4  mx-auto" style = "font-size:22px;max-width:660px;">主板处理芯片升级，既提高了终端对更多功能的处理能力，又同时保证了终端的可靠性。由单片微型计算机P89C51RD2升级为功能更强大更可靠的SRM Cortex-M3系列</figcaption>
+			</figure>
+		</div>
+		</div>
+	</div>
+
+	<div class = "py-5 d-md-flex" style = "background-color:#1A1A1A">
+		<div class = "mx-auto d-md-flex" style = "max-width:1260px;">
+		<div class = "col-md-8 my-5">
+			<img src = "{% static 'portal/img/upgrade.png' %}" class = "img-fluid"></img>
+		</div>
+		<div class = "text-white text-center col-md-4 my-auto">
+			<h1 style = "font-size:3.5rem;">远程升级</h1>
+			<p>
+			增加远程升级功能，可以通过网络远程升级终端程序，便于更高效快速的解决现场的问题。
+			</p>
+		</div>
+		</div>
+	</div>
+
+	<div class = "py-5 d-md-flex bg-dark pt-5">
+		<div class = "container text-white">
+			<h1 class = "">参数比较</h1>
+			<div style = "background:linear-gradient(white,white);height:1px;"
+				class = "my-5">
+			</div>
+
+			<h3 class = "mt-3">交流电路</h3>
+			<div class = "text-white pl-0 d-flex justify-content-betwenen">
+				<div style = "background:linear-gradient(to right,#00fcd5,#00c6ff);height:12px;"
+					class = "mt-5 col-8 mr-3">
+				</div>
+				<div class = "col-4" style = "margin-top:2.5rem;">
+					<h4>48路   WJ3006</h4>
+				</div>
+ 			</div>
+			<div class = "mt-1 mb-5 text-white pl-0 d-flex justify-content-betwenen">
+				<div style = "background:linear-gradient(#888,#888);height:12px;"
+					class = "mt-5 col-4 mr-3">
+				</div>
+				<div class = "col-4 offset-4" style = "margin-top:2.5rem;">
+					<h4>24路   旧版</h4>
+				</div>
+ 			</div>
+
+
+			<h3 class = "mt-3">开关量输出</h3>
+			<div class = "mt-1 text-white pl-0 d-flex justify-content-betwenen">
+				<div style = "background:linear-gradient(to right,#00c6ff,#a343da);height:12px;"
+					class = "mt-5 col-8 mr-3">
+				</div>
+				<div class = "col-4" style = "margin-top:2.5rem;">
+					<h4>8路   WJ3006</h4>
+				</div>
+ 			</div>
+			<div class = "mt-1 mb-5 text-white pl-0 d-flex justify-content-betwenen">
+				<div style = "background:linear-gradient(#888,#888);height:12px;"
+					class = "mt-5 col-4 mr-3">
+				</div>
+				<div class = "col-4 offset-4" style = "margin-top:2.5rem;">
+					<h4>4路   旧版</h4>
+				</div>
+ 			</div>
+
+			<h3 class = "mt-3">驱动能力</h3>
+			<div class = "mt-1 text-white pl-0 d-flex justify-content-betwenen">
+				<div style = "background:linear-gradient(to right,#00fcd5,#00c6ff);height:12px;"
+					class = "mt-5 col-8 mr-3">
+				</div>
+				<div class = "col-4" style = "margin-top:2.5rem;">
+					<h4>30A/300VAC   WJ3006</h4>
+				</div>
+ 			</div>
+			<div class = "mt-1 mb-5 text-white pl-0 d-flex justify-content-betwenen">
+				<div style = "background:linear-gradient(#888,#888);height:12px;"
+					class = "mt-5 col-4 mr-3">
+				</div>
+				<div class = "col-4 offset-4" style = "margin-top:2.5rem;">
+					<h4>5A/300VAC   旧版</h4>
+				</div>
+ 			</div>
+
+
+
+		</div>
+	</div>
+
+{% endblock %}

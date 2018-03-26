@@ -1,0 +1,75 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+
+{% block content %}
+	<div class = "d-flex justify-content-center bg-dark">
+		<div class = "py-3">
+		<div class = "my-5 text-center text-white">
+			<h1 style = "font-size:3.5rem;">不只是灯杆</h1>
+		</div>
+		<div class = "">
+			<img src = "{% static 'portal/img/big_lamp_bgblack.png'%}" class = "img-fluid"></img>
+		</div>
+		</div>
+	</div>
+
+	<div class = "d-md-flex justify-content-md-center bg-light">
+		<div class = "py-3">
+		<div class = "my-5 text-center ">
+			<h1 style = "font-size:3.5rem;">照明和监控结合</h1>
+		</div>
+		<div class = "mx-auto lamp_head_show">
+			<figure class = "figure">
+			<img src = "{% static 'portal/img/lamp_head.png'%}" class = "figure-img img-fluid"></img>
+			<figcaption class = "figure-caption my-3 text-center px-5" style = "font-size:22px;max-width:960px;">实时掌控现场情况，同时能够由统一的系统集成化控制,样式风格丰富，可以根据城市道路构造不同的造型，杆体采用全铝合金材质制作，抗11级以上台风；阳极氧化工艺加工表面，防腐蚀、防变色，坚固耐用；防胶涂层，杜绝小广告，助力文明城市建设</figcaption>
+			</figure>
+		</div>
+		</div>
+	</div>
+
+	<div class = "bg-white">
+		<div class = "my-5 text-center">
+			<h1 style = "font-size:3.5rem;">多杆合一，一杆多能</h1>
+			<div class = "max-auto d-flex justify-content-md-center">
+			<p class = "figure-caption my-3 text-center px-5" style = "font-size:22px;max-width:960px;">
+			以灯杆为载体，将照明控制，视频监控，语音广播，公共WIFI，报警求助，环境检测，绿色充电，信息发布，广告互动，车位检测，井盖检测等功能集于一体
+			</p>
+			</div>
+	
+		</div>
+		<!---
+		<div class = "d-md-flex justify-content-md-between flex-md-equal ">
+			<div class = "mx-auto text-center py-5">
+				<figure class = "figure">
+				<img src = "{% static 'portal/img/lamp_mobile.png'%}" class = "figure-img img-fluid"></img>
+				<figcaption class = "figure-caption my-3">照明和监控结合，美观的同时能够由统一的系统集成化控制</figcaption>
+				</figure>
+			</div>
+			<div class = "mx-auto text-center py-5">
+				<figure class = "figure">
+				<img src = "{% static 'portal/img/lamp_control.png'%}" class = "figure-img img-fluid"></img>
+				<figcaption class = "figure-caption my-3">照明和监控结合，美观的同时能够由统一的系统集成化控制</figcaption>
+				</figure>
+			</div>
+		</div>
+		--->
+
+		<div class = "d-md-flex text-center">
+			<div class = "col-md-8">
+				<img src = "{% static 'portal/img/lamp_control.png'%}" class = "figure-img img-fluid"></img>
+			</div>
+			<div class = "text-center clo-md-4 mx-5" style = "max-with:500px;">
+				<h1>集成控制</h1>
+				<p>增强充电桩、信息交互屏等需要人员使用的设备，在安全保护方面特别注意，除了常规的漏电保护，在灯杆外面包覆一层复合材料，美观耐磨，绝缘强度也达到耐压万伏以上</p>
+			</div>
+		</div>
+		<div class = "d-md-flex justify-content-md-between">
+			<div >
+			</div>
+			<div >
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
+

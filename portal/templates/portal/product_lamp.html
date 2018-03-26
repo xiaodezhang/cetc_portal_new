@@ -1,0 +1,188 @@
+{% extends 'portal/base.html' %}
+{% load static %}
+
+{% block content %}
+	<div class = "d-flex justify-content-center" style = "background-color:#1A1A1A;">
+		<div class = "py-3">
+			<div class = "my-5 text-center text-white">
+				<h1 style = "font-size:3.5rem;">不只是灯杆</h1>
+			</div>
+			<div class = "">
+				<img src = "{% static 'portal/img/big_lamp_bgblack.png'%}" class = "img-fluid"></img>
+			</div>
+		</div>
+	</div>
+
+	<div class = "d-md-flex justify-content-md-center bg-light">
+		<div class = "py-3">
+		<div class = "my-5 text-center mx-3">
+			<h1 style = "font-size:3.5rem;">照明和监控结合</h1>
+		</div>
+		<div class = "mx-auto lamp_head_show">
+			<figure class = "figure">
+			<img src = "{% static 'portal/img/lamp_head.png'%}" class = "figure-img img-fluid"></img>
+			<figcaption class = "figure-caption my-3 text-center px-4" style = "font-size:22px;max-width:960px;">实时掌控现场情况，同时能够由统一的系统集成化控制,样式风格丰富，可以根据城市道路构造不同的造型，杆体采用全铝合金材质制作，抗11级以上台风；阳极氧化工艺加工表面，防腐蚀、防变色，坚固耐用；防胶涂层，杜绝小广告，助力文明城市建设</figcaption>
+			</figure>
+		</div>
+		</div>
+	</div>
+
+	<div class = "bg-white mx-3 my-5">
+		<div class = "my-5 text-center">
+			<h1 style = "font-size:3.5rem;">多杆合一，一杆多能</h1>
+			<div class = "max-auto d-flex justify-content-md-center">
+			<p class = "figure-caption my-3 text-center" style = "font-size:22px;max-width:960px;">
+			以灯杆为载体，将照明控制，视频监控，语音广播，公共WIFI，报警求助，环境检测，绿色充电，信息发布，广告互动，车位检测，井盖检测等功能集于一体
+			</p>
+			</div>
+	
+		</div>
+	</div>
+		<!---
+		<div class = "d-md-flex justify-content-md-between flex-md-equal ">
+			<div class = "mx-auto text-center py-5">
+				<figure class = "figure">
+				<img src = "{% static 'portal/img/lamp_mobile.png'%}" class = "figure-img img-fluid"></img>
+				<figcaption class = "figure-caption my-3">照明和监控结合，美观的同时能够由统一的系统集成化控制</figcaption>
+				</figure>
+			</div>
+			<div class = "mx-auto text-center py-5">
+				<figure class = "figure">
+				<img src = "{% static 'portal/img/lamp_control.png'%}" class = "figure-img img-fluid"></img>
+				<figcaption class = "figure-caption my-3">照明和监控结合，美观的同时能够由统一的系统集成化控制</figcaption>
+				</figure>
+			</div>
+		</div>
+		--->
+
+	<div class = "d-md-flex text-center my-3">
+		<div class = "col-md-5 offset-md-2 my-5">
+			<img src = "{% static 'portal/img/lamp_control.png'%}" class = "figure-img img-fluid"></img>
+		</div>
+		<div class = "text-center clo-md-3 mx-3 d-flex flex-column my-auto" style = "max-with:500px;">
+			<h1>集成控制</h1>
+			<p class = "figure-caption my-3 text-center px-3" style = "font-size:22px;max-width:500px;">
+			增强充电桩、信息交互屏等需要人员使用的设备，在安全保护方面特别注意，除了常规的漏电保护，在灯杆外面包覆一层复合材料，美观耐磨，绝缘强度也达到耐压万伏以上</p>
+		</div>
+	</div>
+
+	<div class = "d-md-flex text-center my-5 mx-3">
+		<div class = "text-center clo-md-1 offset-md-2 d-flex flex-column my-auto" style = "max-with:500px;">
+			<h1>大屏显示</h1>
+			<p class = "figure-caption my-3 text-center" style = "font-size:22px;max-width:500px;">
+			搭载超大屏幕，内置一体化管理平台，实现资源共享，降低开发成本，实现设备设施互联互动，提供一站式出行服务，更有一键求助功能，实时发布信息，道旗指示
+			</p>
+		</div>
+		<div class = "col-md-6">
+			<img src = "{% static 'portal/img/lamp_mobile.png'%}" class = "figure-img img-fluid"></img>
+		</div>
+	</div>
+
+	<div class = "py-5 px-5" style = "background-color:#1A1A1A;">
+		<div class = "my-5 text-center text-white">
+			<h1 style = "font-size:3.5rem;">智慧灯杆综合应用管理平台</h1>
+			<p>打造"1+N"信息化体系</p>
+		</div>
+		<div class = "py-3 d-flex justify-content-center">
+			<div class = "">
+				<img src = "{% static 'portal/img/lamp_management_sys.jpg'%}" class = "img-fluid"></img>
+			</div>
+		</div>
+		<div class = "text-center text-white mx-auto pt-5" style="max-width:600px;">
+			<p>
+			物联网感知平台是以为民服务全程全时、城市治理高效有序、数据开放共融共享、经济发展绿色开源、网络空间安全清朗为主要目标。打造基于智慧灯杆"1平台+N维应用"为总体框架的物联网感知体系，是新型只会城市建设重点产品
+			</p>
+		</div>
+	</div>
+
+	<div class = "bg-light py-1 px-3 px-5">
+		<div class = "my-5 text-center">
+			<h1 style = "font-size:3.5rem;">一个平台，N维应用</h1>
+			<div class = "max-auto d-flex justify-content-md-center">
+			<p class = "figure-caption my-3 text-center" style = "font-size:22px;max-width:960px;">
+			以灯杆接入网络通信平台、应用服务平台，构建N维多层次应用
+			</p>
+			</div>
+	
+		</div>
+		<div class = "d-md-flex md-md-equal justify-content-md-between mx-auto my-5" style = "max-width:960px;">
+			<div  class = "card text-center my-3 col-md-3 mr-md-3">
+				<div class = "card-body">
+					<h2>一维</h2>
+					<p class ="font-weight-normal">
+					拓展路灯杆功能，充分发挥其密度大、分布广的特性，增加LED灯控、安防摄像头、环境监测、通信基站、公共广播、信息发布屏等N种应用设备，逐步完成城市信息感知</p>
+				</div>
+			</div>
+			<div  class = "card text-center my-3 col-md-3 mr-md-3">
+				<div class = "card-body">
+					<h2>二维</h2>
+					<p class ="font-weight-normal">
+					为智慧市政、智慧园区、智慧安防、智慧照明、无线城市提供从建设、运营到管理的一整套解决方案
+					</p>
+				</div>
+			</div>
+			<div  class = "card text-center my-3 col-md-3 mr-md-3">
+				<div class = "card-body">
+					<h2>三维</h2>
+					<p class ="font-weight-normal">
+					为智慧城市提供以物联网和互联网共享平台为基础的城市运行新空间
+					</p>
+				</div>
+			</div>
+			<div  class = "card text-center my-3 col-md-3">
+				<div class = "card-body">
+					<h2>N维</h2>
+					<p class ="font-weight-normal">
+					构建泛在、高效、协同、共享的城市时间、空间管理模型，为市民提供便捷的智能服务，为政府提供城市智慧智力新模式，为企业提供行业应用新生态
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "py-5 d-md-flex" style = "background-color:#1A1A1A">
+		<div class = "mx-auto d-md-flex" style = "max-width:1260px;">
+		<div class = "col-md-8 my-5">
+			<img src = "{% static 'portal/img/cfpl.jpg' %}" class = "img-fluid"></img>
+		</div>
+		<div class = "text-white text-center col-md-4 my-auto">
+			<h1 style = "font-size:3.5rem;">乘风破浪</h1>
+			<p>
+				此设计采用浪花的形态设计一款道路智慧灯杆，此款系列灯杆有双杆单头与双头灯，设备可安装在两杆之间，适用于较宽道路。也有单杆单头与双头灯，适合于两道三道车道。“乘风破浪会有时”借鉴李白的诗句为灯杆取名为“乘风破浪”
+			</p>
+		</div>
+		</div>
+	</div>
+
+	<div class = "py-5 d-md-flex flex-md-equal" style = "background-color:#1A1A1A">
+		<div>
+			<div class = " text-white text-center mx-auto px-5">
+				<h1 style = "font-size:3.5rem;">飞檐</h1>
+				<p style = "max-width:500px;" class = "mx-auto">
+				此设计来源于古代建筑屋檐演变而来，辅以镂空窗花边做装饰。摄像头支架为直角，同样辅以窗花边装饰，支架中间可隐藏广播，拉长后可隐藏安放各种设备。大屏边框做形象化设计。整个灯杆呈现出中国风适用于中式街道。
+				</p>
+			</div>
+			<div class = "mx-auto">
+				<img src = "{% static 'portal/img/gz.jpg' %}"  class = "img-fluid">
+				</img>
+			</div>
+		</div>
+		<div>
+			<div class = " text-white text-center mx-auto px-5">
+				<h1 style = "font-size:3.5rem;">柳眉凤眼</h1>
+				<p style = "max-width:500px;" class = "mx-auto">
+				此设计以柳叶和中国传统美女"柳叶眉丹凤眼"为创意来源，结合变型而来设计出一款赏心悦目的智慧路灯，除了此智慧灯杆本身功能外，能放置基站天线在顶部，rru隐藏在两块显示大屏内部，根据需要放置同等数量天线与rru并且做好散热结构设计，做到外型与功能相结合更好的服务于城市。
+				</p>
+			</div>
+			<div class = "mx-auto">
+				<img src = "{% static 'portal/img/lmfy.jpg' %}"  class = "img-fluid">
+				</img>
+			</div>
+
+		</div>
+	</div>
+
+
+
+{% endblock %}
+	

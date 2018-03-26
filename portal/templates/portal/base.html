@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	  {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>盛同</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'portal/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'portal/css/product.css' %}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md site-header sticky-top py-1 navbar-dark">
+        <a class="d-inline-flex py-2 px-3" href="/.">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+        </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="container d-flex  flex-column flex-md-row justify-content-md-between" style = "max-width:760px;">
+                <a class="py-2 " href="/.">首页</a>
+		<!---
+		<div class = "nav-item dropdown py-2">
+                <a class="dropdown-toggle" href="#" id = "navbarDropdown" role = "button"
+			data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false">Product</a>
+		<div class = "dropdown-menu bg-dark" aria-labelledby = "navbarDropdown">
+			<div class = " d-flex flex-row justify-content-between">
+			<img src = "{% static 'portal/img/ld.svg' %}" style = "width:30%;height:20%"></img>
+			<img src = "{% static 'portal/img/gw.svg' %}" style = "width:30%;height:20%"></img>
+			<img src = "{% static 'portal/img/sz.svg' %}" style = "width:30%;height:20%"></img>
+			<img src = "{% static 'portal/img/zm.svg' %}" style = "width:30%;height:20%"></img>
+			</div>
+		</div>
+		</div>
+		--->
+                <a class="py-2" href="#" id = "nav-button">产品</a>
+                <a class="py-2" href="company">企业</a>
+                <a class="py-2" href="news_center">新闻</a>
+                <a class="py-2" href="contact_us">联系我们</a>
+                </div>
+        </div>
+    </nav>
+    <div class = "bg-dark d-none" id = "small-nav" >
+	    <div class = "mx-auto d-flex justify-content-between pt-3" style="max-width:300px;">
+       	        <a href="product_lamp">
+		<figure class = "figure pt-2">
+      	             <img src = "{% static 'portal/img/ld.svg' %}" class = "figure-img"></img>
+		     <figcaption class = "figure-caption">灯杆</figcaption>
+		</figure>
+		</a>
+
+
+       	        <a href="product_pip">
+		<figure class = "figure pt-3">
+      	             <img src = "{% static 'portal/img/gw.svg' %}" class = "figure-img"></img>
+		     <figcaption class = "figure-caption">管网</figcaption>
+		</figure>
+		</a>
+
+		<a href = "product_municipal">
+		<figure class = "figure" style="padding-top:0.8rem!important">
+      	             <img src = "{% static 'portal/img/sz.svg' %}" class = "figure-img"></img>
+		     <figcaption class = "figure-caption">市政</figcaption>
+		</figure>
+		</a>
+
+		<a href = "product_light">
+		<figure class = "figure">
+      	             <img src = "{% static 'portal/img/zm.svg' %}" class = "figure-img"></img>
+		     <figcaption class = "figure-caption">照明</figcaption>
+		</figure>
+		</a>
+	    </div>
+    </div>
+
+    {% block content %}{% endblock %}
+
+     <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Random feature</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+            <li><a class="text-muted" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Resource</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'portal/js/vendor/jquery-slim.min.js' %}"></script>
+    <script src="{% static 'portal/js/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'portal/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'portal/js/vendor/holder.min.js' %}"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+     
+      document.getElementById("nav-button").addEventListener("click",function(event){
+	      var small_nav = document.getElementById("small-nav");
+	      if(small_nav.classList.contains("d-block")){
+	          small_nav.classList.remove("d-block");
+	      }
+		      else{
+	          small_nav.classList.add("d-block");
+		      }
+      },false);
+    </script>
+  </body>
+</html>

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="icon" href="{% static 'portal/img/logo.ico'%}">
+
 
     <title>盛同</title>
 
@@ -21,7 +22,7 @@
 
     <nav class="navbar navbar-expand-md site-header sticky-top py-1 navbar-dark">
         <a class="d-inline-flex py-2 px-3" href="/.">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+		<img src = "{% static 'portal/img/logo_dark.svg' %}" style = "width:30px;height:30px" class = "img-fluid"></img>
         </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -52,25 +53,17 @@
     </nav>
     <div class = "bg-dark d-none" id = "small-nav" >
 	    <div class = "mx-auto d-flex justify-content-between pt-3" style="max-width:300px;">
-       	        <a href="product_lamp">
-		<figure class = "figure pt-2">
-      	             <img src = "{% static 'portal/img/ld.svg' %}" class = "figure-img"></img>
-		     <figcaption class = "figure-caption">灯杆</figcaption>
-		</figure>
-		</a>
-
-
-       	        <a href="product_pip">
-		<figure class = "figure pt-3">
-      	             <img src = "{% static 'portal/img/gw.svg' %}" class = "figure-img"></img>
-		     <figcaption class = "figure-caption">管网</figcaption>
-		</figure>
-		</a>
-
 		<a href = "product_municipal">
-		<figure class = "figure" style="padding-top:0.8rem!important">
+		<figure class = "figure">
       	             <img src = "{% static 'portal/img/sz.svg' %}" class = "figure-img"></img>
 		     <figcaption class = "figure-caption">市政</figcaption>
+		</figure>
+		</a>
+
+       	        <a href="product_lamp">
+		<figure class = "figure">
+      	             <img src = "{% static 'portal/img/ld.svg' %}" class = "figure-img"></img>
+		     <figcaption class = "figure-caption">灯杆</figcaption>
 		</figure>
 		</a>
 
@@ -80,15 +73,24 @@
 		     <figcaption class = "figure-caption">照明</figcaption>
 		</figure>
 		</a>
+
+       	        <a href="product_pip">
+		<figure class = "figure">
+      	             <img src = "{% static 'portal/img/gw.svg' %}" class = "figure-img"></img>
+		     <figcaption class = "figure-caption">管网</figcaption>
+		</figure>
+		</a>
+	
 	    </div>
     </div>
 
     {% block content %}{% endblock %}
 
+    <div class = "bg-white">
      <footer class="container py-5">
       <div class="row">
         <div class="col-12 col-md">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          <img src = "{% static 'portal/img/logo.svg' %}"  class = "img-fluid" style = "height:30px;width:30px;"></img>
           <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
         </div>
         <div class="col-6 col-md">
@@ -131,6 +133,7 @@
         </div>
       </div>
     </footer>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
